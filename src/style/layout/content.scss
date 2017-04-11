@@ -1,0 +1,128 @@
+.screen {
+  @include flex;
+  @include flex__full-center;
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
+    padding: 60px;
+    width: 1104px;
+    height: 752px;
+  }
+
+  &__container {
+    background-color: $bg__blue-light;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: $shadow__glow-blue;
+    overflow: hidden;
+    border: 1px solid #0c79bd;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 40px;
+  }
+
+  &__logo {
+
+    &-container {
+      position: relative;
+      left: 0; top: 0;
+      display: inline-block;
+    }
+
+    &-link {
+      display: block;
+    }
+
+    &-image:hover {
+      opacity: .85;
+      transition: all ease .1s;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    width: 100%;
+    max-width: 635px;
+    height: 190px;
+    margin: auto;
+
+    &-text {
+      font-size: 78px;
+      line-height: 78px;
+      color: $white;
+      @extend %bold;
+      text-align: center;
+    }
+  }
+}
+
+.chairs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 120px;
+
+  &__container {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0;
+    bottom: -15px;
+    width: 100%;
+    max-width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  &__disclamer {
+    width: 100%;
+    max-width: 690px;
+    height: 36px;
+    bottom: -42px;
+    margin: auto;
+    opacity: .15;
+  }
+}
+
+.conditions {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+
+  &__link {
+    display: block;
+    position: relative;
+    padding-bottom: 4px;
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, .6);
+    }
+
+    &:hover {
+      color: rgba(255, 255, 255, .5);
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

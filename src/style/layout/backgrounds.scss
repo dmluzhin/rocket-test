@@ -1,0 +1,39 @@
+.bg {
+
+  &__white-noize {
+    background-image: url("../images/gif/noize.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $bg__blue-light;
+      opacity: .99;
+    }
+  }
+
+  &__chairs {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/png/chairs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: relative;
+
+    &-disclamer {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/png/disclamer.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+    }
+  }
+}

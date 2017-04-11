@@ -1,0 +1,70 @@
+/*FONTS*/
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+  url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+  url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
+  url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+%regular {
+  font: {
+    family: 'ProximaNovaRegular';
+    weight: 400;
+    style: normal;
+  }
+}
+
+%black {
+  font: {
+    family: 'ProximaNovaBlack';
+    weight: 500;
+    style: normal;
+  }
+}
+
+%bold {
+  font: {
+    family: 'ProximaNovaBold';
+    weight: 700;
+    style: normal;
+  }
+}
+
+
+/*COLORS*/
+$bg__blue: #111126;
+$bg__blue-light: #0b79be;
+
+$black: #000;
+
+$white: #fff;
+
+$gray__text: rgb(84, 84, 84);
+
+
+/*SHADOWS*/
+
+$shadow__glow-blue: 0 0 20px rgba(11, 121, 190, 0.4), 0 0 120px rgba(11, 121, 190, 0.4);

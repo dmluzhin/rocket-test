@@ -1,0 +1,10 @@
+{
+  "name": "partials",
+  "version": "1.0.0",
+  "description": "Simple partials",
+  "author": "d.m.luzhin",
+  "license": "ISC",
+  "dependencies": {
+      "gulp": "^3.8.11"
+   }
+}

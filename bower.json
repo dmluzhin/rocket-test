@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "authors": [
+    "y"
+  ],
+  "description": "y",
+  "license": "y",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*"
+  },
+  "main": "y",
+  "homepage": "y",
+  "keywords": [
+    "y"
+  ]
+}
