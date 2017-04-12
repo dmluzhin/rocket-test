@@ -57,7 +57,21 @@
 
     &-column {
       position: relative;
-      width: 250px;
+      width: 240px;
+
+      .film-sticker__svg-wrap {
+        width: 130px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        & > svg {
+          fill: $white;
+          width: 90px;
+        }
+      }
     }
   }
 
@@ -79,6 +93,28 @@
     }
   }
 
+  &__left-column, &__right-column {
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+
+  &__left-column {
+    left: 0;
+    width: 55%;
+  }
+
+  &__right-column {
+    right: 0;
+    width: 45%;
+    padding: 143px 28px;
+
+    &-title {
+
+    }
+  }
+
+
   &__content-container {
   }
 
@@ -95,13 +131,24 @@
     justify-content: center;
     align-content: space-around;
 
-    &-text {
+    &-list {
+      margin-top: 20px;
+    }
 
+    .button__yellow {
+      bottom: -60px;
     }
   }
 
   &__paragraph {
     margin-top: 20px;
+  }
+
+  &__list-item {
+    @extend %bold;
+    margin-bottom: 14px;
+    color: $white;
+    font-size: 18px;
   }
 }
 

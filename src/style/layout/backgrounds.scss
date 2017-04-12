@@ -93,6 +93,14 @@
       left: 5px;
       bottom: -55%;
     }
+
+    &-small {
+      left: -80px;
+      bottom: -67px;
+      width: 402px;
+      height: 253px;
+      background-size: 100%;
+    }
   }
 
   &__ticket {
@@ -118,5 +126,40 @@
       transform: rotate(33deg);
       left: 30px;
     }
+  }
+
+  &__container {
+    position: absolute;
+    width: 346px;
+    height: 100%;
+    bottom: -79px;
+    right: 41px;
+  }
+
+  &__phone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url("../images/png/iphone.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: transparent;
+  }
+
+  &__city {
+    position: absolute;
+    width: 311px;
+    height: 207px;
+    top: 76px;
+    left: 18;
+    margin: auto;
+    background-image: url("../images/jpg/city__bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: transparent;
   }
 }

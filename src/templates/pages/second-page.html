@@ -1,35 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Сходи в кино за счет Рокетбанка (тестовое задание Данила Лужин)</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-<div class="background__fixed"></div>
+<div class="screen__content screen__second-page" style="display: none">
 
-<div class="screen">
-	<div class="screen__wrapper">
-		<div class="screen__container bg__white-noize">
-			<div class="bg__white-noize-overlay"></div>
+	<div class="bg__ticket bg__ticket-first"></div>
+	<div class="bg__ticket bg__ticket-second"></div>
 
-			<div class="screen__logo-container">
-				<a href="https://rocketbank.ru/" target="_blank" class="screen__logo-link">
-					<img src="images/png/logo.png" class="screen__logo-image image"/>
-				</a>
-			</div>
+	<div class="screen__title">
+		<h2 class="screen__title-text">Как сходить в кино бесплатно?</h2>
+	</div>
 
-			//= templates/pages/first-page.html
-			//= templates/pages/second-page.html
-			//= templates/pages/third-page.html
-
+	<div class="screen__content-row">
+		<div class="screen__content-column">
+			<h3 class="screen__title-text">Закажите карту</h3>
+			<p class="screen__paragraph">Закажите карту Рокетбанка &mdash; это бесплатно и очень быстро</p>
 		</div>
+		<div class="screen__content-column">
+			<h3 class="screen__title-text">Оплатите билеты</h3>
+			<p class="screen__paragraph">Оплатите картой 2 билета на любой фильм в кинотеатрах</p>
+		</div>
+		<div class="screen__content-column">
+			<h3 class="screen__title-text">Получите деньги</h3>
+			<p class="screen__paragraph">В течение суток мы вернем вам деньги на карту</p>
+		</div>
+	</div>
 
-		<div class="film-sticker__container container" style="display: none">
-			<a href="#" class="film-sticker__link">
-				<span class="film-sticker__sign">Выиграй билет</span>
-				<div class="film-sticker__svg-wrap">
-					<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="opacity: 1; box-shadow: none; border-radius: 0px;" viewBox="18.799999237060547 219.40003967285156 558.2999877929688 401.89990234375" y="0px" x="0px" id="Layer_1" width="" height="" preserveAspectRatio="xMidYMid meet" fill="#f24ebe" fill-opacity="1">
+	<div class="screen__content-row">
+		<div class="screen__content-column"></div>
+		<div class="screen__content-column">
+			<button class="screen__button button__yellow button__order button">Заказать карту</button>
+			<div class="yellow__link-holder align-center">
+				<a href="#" class="yellow__link">Подробнее о карте</a>
+			</div>
+		</div>
+		<div class="screen__content-column flex__column flex__column-end flex__wrap">
+			<div class="film-sticker__svg-wrap">
+				<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="opacity: 1; box-shadow: none; border-radius: 0px;" viewBox="18.799999237060547 219.40003967285156 558.2999877929688 401.89990234375" y="0px" x="0px" id="Layer_1" width="" height="" preserveAspectRatio="xMidYMid meet" fill="#f24ebe" fill-opacity="1">
 <g>
 	<path d="M57.4,346c-1.3-1.8-2.2-5.1-2.1-7.3l0.8-15.6c0.1-2.2-1.6-3.8-3.8-3.5l-19,2.2c-2.2,0.3-3.8,2.2-3.5,4.4l3.4,27.7   c0.3,2.2,1.9,5,3.7,6.3l11.2,8c1.8,1.3,5,2.3,7.2,2.3h4.1c2.2,0,4-1.8,4-4v-8.1c0-2.2-1-5.5-2.3-7.3L57.4,346z"></path>
 	<path d="M111.5,312.4L71,282.1c-1.8-1.3-3.1-0.6-3,1.6l0.9,21.2c0.1,2.2,1.6,5.1,3.3,6.5l17.5,13.9c1.7,1.4,3,4.3,2.9,6.5   l-1.2,17.1c-0.1,2.2-1.4,5.4-2.8,7.1l-1.8,2.2c-1.4,1.7-4.3,3-6.5,2.8l-5.4-0.4c-2.2-0.2-3.9,1.5-3.7,3.7l0.9,11.9   c0.2,2.2,2.1,3.7,4.3,3.4l19.7-2.9c2.2-0.3,5.2-1.9,6.8-3.4l9.9-10.1c1.5-1.6,3-4.6,3.2-6.8l1.4-15.9c0.2-2.2,0.1-5.8-0.2-7.9   l-2-13.8C114.9,316.6,113.2,313.7,111.5,312.4z"></path>
@@ -53,20 +56,11 @@
 	<path d="M435.7,406.8c-0.5-2.1-2.6-3.9-4.8-4l-20.5-0.2c-2.2,0-4.2,1.7-4.4,3.9L389.6,576c-0.2,2.2,1.4,4.1,3.5,4.1   c2.1,0.1,4.1-1.6,4.5-3.8l3.2-21.6c0.3-2.2,2.4-4,4.6-4l24.9-0.5c2.2,0,4.3,1.7,4.7,3.9l4.4,23.2c0.4,2.2,2.5,3.8,4.7,3.6l24.9-1.9   c2.2-0.2,3.6-2.1,3.1-4.2L435.7,406.8z M429.3,525.9l-21.8,0.9c-2.2,0.1-3.7-1.6-3.4-3.8l12.1-78.3c0.3-2.2,1-2.2,1.4,0l14.9,77.2   C432.9,524,431.5,525.8,429.3,525.9z"></path>
 	<path d="M575.8,487.5c0-2.2-0.2-5.8-0.3-8c0,0-3.5-53.1-3.8-54c-0.3-0.9-8.5-14.9-8.5-14.9c-1.1-1.9-3.7-4-5.8-4.7l-17.2-5.6   c-2.1-0.7-5.6-1.2-7.8-1.2h-55c-2.2,0-4,1.8-3.9,4l3.9,169.8c0,2.2,1.9,4.1,4.1,4.2l32.7,1.7c2.2,0.1,5.8,0,8-0.2l28.3-2.9   c2.2-0.2,5.4-1.5,7.1-2.9l8.9-7.1c1.7-1.4,3.8-4.2,4.6-6.2l4.6-12.1c0.8-2.1,1.4-5.5,1.3-7.7L575.8,487.5z M545.5,517l-0.5,23.6   c0,2.2-1.5,5.1-3.2,6.5l-4.4,3.6c-1.7,1.4-4.9,2.6-7.1,2.8l-19,1.1c-2.2,0.1-4.1-1.6-4.1-3.8l-4.1-124.5c-0.1-2.2,1.7-4,3.9-4.1   l15.3-0.2c2.2,0,5.7,0.4,7.9,0.9l0.9,0.2c2.1,0.5,5.1,2.3,6.5,4c0,0,3.9,4.4,4.2,5.4s3.6,76.4,3.6,76.4   C545.5,511.2,545.5,514.8,545.5,517z"></path>
 </g>
-</svg></div>
-			</a>
-			<div class="film-sticker__blot"></div>
+</svg>
+			</div>
+			<div class="yellow__link-holder align-center">
+				<a href="#" class="yellow__link">Выиграй билеты</a>
+			</div>
 		</div>
-
 	</div>
 </div>
-
-<div class="chairs">
-	<div class="chairs__container bg__chairs"></div>
-	<div class="chairs__disclamer chairs__container bg__chairs-disclamer"></div>
-	<div class="conditions">
-		<a target="_blank" href="https://rocketbank.ru/pages/cinema-rules" class="conditions__link">Условия акции</a>
-	</div>
-</div>
-</body>
-</html>

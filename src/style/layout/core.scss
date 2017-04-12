@@ -75,7 +75,8 @@ p {
 
   &__order {
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 40px;
+
   }
 }
 
@@ -108,5 +109,29 @@ p {
 
   &-holder {
     text-align: center;
+    margin: 20px 0;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &-end {
+      align-items: flex-end;
+    }
+  }
+
+
+  &__wrap {
+    flex-wrap: wrap;
   }
 }
