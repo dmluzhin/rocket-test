@@ -12,7 +12,101 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1 {
+  font-size: 78px;
+  line-height: 78px;
+  color: $white;
+  @extend %black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 39px;
+  line-height: 39px;
+  color: $white;
+  @extend %regular;
+  text-align: center;
+}
+h3 {
+  font-size: 39px;
+  line-height: 39px;
+  color: $white;
+  @extend %black;
+  text-align: left;
+}
+
+
+p {
+  color: $white;
+  font-size: 17px;
+  @extend %regular;
+  line-height: 1.4;
+}
+
 .image {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+
+  &__yellow {
+    position: absolute;
+    width: 248px;
+    height: 65px;
+    font-size: 21px;
+    border-radius: 10px;
+    background-color: $yellow;
+    transition: all ease .15s;
+    text-align: center;
+    color: rgb(51,51,51);
+    @extend %regular;
+    border: none;
+    margin: 0 auto;
+
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  &__order {
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+.yellow__link {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 17px;
+  color: $yellow;
+  text-shadow: 0 0 1px $white;
+
+  &:hover {
+    color: $white;
+
+    &:before {
+      background-color: $white;
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background-color: $yellow;
+  }
+
+  &-holder {
+    text-align: center;
+  }
 }
