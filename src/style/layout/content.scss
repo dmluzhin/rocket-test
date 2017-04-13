@@ -7,6 +7,7 @@
   &__first-page {}
 
   &__second-page {
+    padding: 110px 100px;
 
     .screen__title {
       top:0;
@@ -15,6 +16,13 @@
     }
   }
   &__third-page {}
+  &__fourth-page {
+    background-color: $violet !important;
+    background-image: url("../images/svg/margo__robbie.svg");
+    background-size: 393px;
+    background-repeat: no-repeat;
+    background-position: bottom -3px left 183px;
+  }
 
   &__wrapper {
     position: relative;
@@ -28,9 +36,7 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: $shadow__glow-blue;
     overflow: hidden;
-    border: 1px solid #0c79bd;
     border-bottom: none;
   }
 
@@ -40,7 +46,6 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    padding: 120px 100px;
 
     &-row {
       position: relative;
@@ -138,10 +143,22 @@
     .button__yellow {
       bottom: -60px;
     }
+
+    &-date {
+      color: $purple;
+      margin-top: 16px;
+      @extend %bold;
+      font-size: 20px;
+    }
   }
 
   &__paragraph {
-    margin-top: 20px;
+    margin-top: 12px;
+
+    &.tiny {
+      font-size: 13px;
+      width: 248px;
+    }
   }
 
   &__list-item {
@@ -149,6 +166,34 @@
     margin-bottom: 14px;
     color: $white;
     font-size: 18px;
+  }
+
+  &__col {
+    width: 50%;
+
+    &:first-child {
+      padding: 193px 63px 0 93px;
+    }
+
+    &:last-child {
+      padding: 50px 93px 0 10px;
+    }
+  }
+
+  &__information {
+    position: relative;
+    display: block;
+  }
+
+  &__partners {
+    margin-top: 40px;
+
+    &-header {
+      @extend %regular;
+      font-size: 18px;
+      color: $white;
+      opacity: .7;
+    }
   }
 }
 
@@ -284,4 +329,42 @@
     background-size: 100%;
   }
 }
+.svg {
 
+  &__inline-wrap {
+    text-align: justify;
+    vertical-align: top;
+    margin-top: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .clique {
+      width: auto;
+      height: 27px;
+    }
+
+    .cinemaholics {
+      width: auto;
+      height: 18px;
+    }
+  }
+}
+
+.sign {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.498039);
+  font-size: 13px;
+  width: 145px;
+  padding: 10px 0;
+  vertical-align: middle;
+  margin-left: 20px;
+}

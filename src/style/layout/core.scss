@@ -38,7 +38,7 @@ h3 {
 
 p {
   color: $white;
-  font-size: 17px;
+  font-size: 18px;
   @extend %regular;
   line-height: 1.4;
 }
@@ -46,38 +46,6 @@ p {
 .image {
   max-width: 100%;
   height: auto;
-}
-
-.button {
-  display: inline-block;
-  width: 100%;
-  height: 50px;
-
-  &__yellow {
-    position: absolute;
-    width: 248px;
-    height: 65px;
-    font-size: 21px;
-    border-radius: 10px;
-    background-color: $yellow;
-    transition: all ease .15s;
-    text-align: center;
-    color: rgb(51,51,51);
-    @extend %regular;
-    border: none;
-    margin: 0 auto;
-
-
-    &:hover {
-      background-color: $white;
-    }
-  }
-
-  &__order {
-    position: relative;
-    margin-top: 40px;
-
-  }
 }
 
 .yellow__link {
@@ -133,5 +101,13 @@ p {
 
   &__wrap {
     flex-wrap: wrap;
+  }
+
+  &__flip {
+    justify-content: flex-end;
+  }
+
+  &__space-between {
+    justify-content: space-between;
   }
 }

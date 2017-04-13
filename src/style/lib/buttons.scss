@@ -1,0 +1,82 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+
+  &__yellow {
+    position: absolute;
+    width: 248px;
+    height: 65px;
+    font-size: 21px;
+    border-radius: 10px;
+    background-color: $yellow;
+    transition: all ease .15s;
+    text-align: center;
+    color: rgb(51,51,51);
+    @extend %regular;
+    border: none;
+    margin: 0 auto;
+
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  &__purple {
+    border-radius: 5px;
+    font-size: 21px;
+    background-color: $purple;
+    @extend %regular;
+    border: none;
+    color: $white;
+    display: inline-block;
+    width: 200px;
+    height: 65px;
+
+    &:hover {
+      background-color: $white;
+      color: $purple;
+    }
+  }
+
+  &__order {
+    position: relative;
+
+  }
+
+  &__container {
+    margin-top: 30px;
+    position: relative;
+  }
+
+  &__social {
+    width: 181px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 21px;
+    @extend %regular;
+    border: none;
+    color: $white;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+
+  &__fb {
+    background-color: rgb(59,89,152);
+    &:hover {
+      background-color: $white;
+      color: rgb(59,89,152);
+    }
+  }
+
+  &__vk {
+    background-color: rgb(86,124,164);
+    margin-right: 0;
+    &:hover {
+      background-color: $white;
+      color: rgb(86,124,164);
+    }
+  }
+}
