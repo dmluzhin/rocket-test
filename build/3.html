@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Сходи в кино за счет Рокетбанка (тестовое задание Данила Лужин)</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
+<div>
 <div class="background__fixed"></div>
 
 <div class="screen">
 	<div class="screen__wrapper">
-		<div class="screen__container bg__white-noize">
+		<div class="screen__container bg__white-noize"  id="content">
 			<div class="bg__white-noize-overlay"></div>
-			<div class="screen__content screen__first-page" id="content">
-			
-				<div class="bg__stars container"></div>
-				<div class="bg__clouds container"></div>
-				<div class="bg__card bg__card-middle container"></div>
-				<div class="bg__card bg__card-left container"></div>
-				<div class="bg__card bg__card-right container"></div>
-			
-				<div class="screen__title">
-					<h1 class="screen__title-text">Сходи в кино за счет Рокетбанка</h1>
-					<button class="screen__button button__yellow button history" href="2.html">Хочу в кино!</button>
+			<div class="screen__content screen__third-page">
+				<div class="screen__left-column">
+					<div class="bg__container">
+						<div class="bg__city"></div>
+						<div class="bg__phone"></div>
+						<div class="bg__card bg__card-small container"></div>
+					</div>
+
+				</div>
+				<div class="screen__right-column">
+					<div class="screen__right-column-title">
+						<h3 class="screen__title-text">Нет причин не попробовать</h3>
+						<ul class="screen__title-list">
+							<li class="screen__list-item">&mdash;&nbsp;Бесплатное обслуживание</li>
+							<li class="screen__list-item">&mdash;&nbsp;1 до 10% кешбэк за все покупки</li>
+							<li class="screen__list-item">&mdash;&nbsp;8% годовых на остаток
+							</li>
+						</ul>
+						<p class="screen__paragraph"><a href="#" class="yellow__link">Подробнее</a> о тарифе</p>
+						<div class="button__container">
+							<button class="button__order button__yellow button">Заказать карту</button>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -77,7 +82,4 @@
 		<a target="_blank" href="https://rocketbank.ru/pages/cinema-rules" class="conditions__link">Условия акции</a>
 	</div>
 </div>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+</div>
