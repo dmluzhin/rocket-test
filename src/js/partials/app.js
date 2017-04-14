@@ -6,7 +6,6 @@ $(document).ready(function() {
 		getContent(href, true);
 	})
 
-
 });
 
 window.addEventListener("popstate", function(e){
