@@ -5,11 +5,18 @@ html, body {
   overflow: hidden;
   @extend %regular;
 }
-
+* {
+  -webkit-font-smoothing: antialiased !important;
+}
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility !important;
+  /*-webkit-font-smoothing: subpixel-antialiased !important;*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+
 }
 
 h1 {

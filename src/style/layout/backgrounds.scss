@@ -28,7 +28,7 @@
 
   }
 
-  &__chairs {
+  &__chairs, &__chairs-purple {
     width: 100%;
     height: 100%;
     background-image: url("../images/png/chairs.png");
@@ -47,6 +47,11 @@
       position: relative;
     }
   }
+
+  &__chairs-purple {
+    background-image: url("../images/png/chairs_purple.png");
+  }
+
 
   &__clouds {
     position: absolute;

@@ -3,11 +3,12 @@
   @include flex__full-center;
   width: 100%;
   height: 100%;
+  position: relative;
 
   &__first-page {}
 
   &__second-page {
-    padding: 110px 100px;
+    padding: 110px 90px;
 
     .screen__title {
       top:0;
@@ -25,16 +26,18 @@
   }
 
   &__wrapper {
+    @include flex;
+    @include flex__full-center;
     position: relative;
     padding: 60px;
-    width: 1104px;
-    height: 752px;
+    width: 100%;
+    height: 100%;
   }
 
   &__container {
     background-color: $bg__blue-light;
-    width: 100%;
-    height: 100%;
+    width: 984px;
+    height: 632px;
     border-bottom: none;
     border-radius: 30px;
     /*box-shadow: $shadow__glow-blue;*/
@@ -47,7 +50,7 @@
     width: 100%;
     height: 100%;
     background-color: $bg__blue-light;
-    opacity: .97;
+    opacity: .98;
     overflow: hidden;
 
     &-row {
@@ -65,7 +68,7 @@
 
     &-column {
       position: relative;
-      width: 240px;
+      width: 251px;
 
       .film-sticker__svg-wrap {
         width: 130px;
@@ -78,6 +81,7 @@
         & > svg {
           fill: $white;
           width: 90px;
+          margin-bottom: -8px;
         }
       }
     }
@@ -145,6 +149,8 @@
 
     .button__yellow {
       bottom: -60px;
+      left: 0; right: 0;
+      margin: auto;
     }
 
     &-date {
@@ -227,7 +233,7 @@
   &__container {
     position: absolute;
     left: 0; right: 0;
-    top: 0;
+    top: 10px;
     bottom: -15px;
     width: 100%;
     max-width: 1200px;
@@ -239,7 +245,7 @@
     width: 100%;
     max-width: 690px;
     height: 36px;
-    bottom: -42px;
+    bottom: -34px;
     margin: auto;
     opacity: .15;
   }
@@ -275,6 +281,10 @@
         display: none;
       }
     }
+
+    &-yellow {
+      color: $yellow;
+    }
   }
 }
 
@@ -282,8 +292,8 @@
 
   &__container {
     position: absolute;
-    right: 40px;
-    top: 413px;
+    right: -20px;
+    top: 353px;
     width: 204px;
     height: 204px;
     border-radius: 100%;
@@ -386,4 +396,28 @@
   padding: 10px 0;
   vertical-align: middle;
   margin-left: 20px;
+}
+
+.open-logo {
+  position: absolute;
+  top: 0;
+  width: 55px;
+  height: 91px;
+  right: 60px;
+  background-color: #00B3E3;
+  transition: all ease .2s;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  & > svg {
+    fill: $white;
+    width: 100%;
+    height: auto;
+
+    .st0{fill:#00B3E3;}
+    .st1{fill:#FFFFFF;}
+    .st2{fill:#EDECEC;}
+  }
 }
