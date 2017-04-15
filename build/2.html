@@ -1,11 +1,18 @@
-<div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сходи в кино за счет Рокетбанка (тестовое задание Данила Лужин)</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
 <div class="background__fixed"></div>
 
 <div class="screen">
-	<div class="screen__wrapper">
-		<div class="screen__container bg__white-noize"  id="content">
+	<div class="screen__wrapper" id="content">
+		<div class="screen__container bg__white-noize">
 			<div class="bg__white-noize-overlay"></div>
-			<div class="screen__content screen__second-page">
+			<div class="screen__content screen__second-page" >
 
 				<div class="bg__ticket bg__ticket-first"></div>
 				<div class="bg__ticket bg__ticket-second"></div>
@@ -15,15 +22,15 @@
 				</div>
 
 				<div class="screen__content-row">
-					<div class="screen__content-column">
+					<div class="screen__content-column screen__column-slide">
 						<h3 class="screen__title-text">Закажите карту</h3>
 						<p class="screen__paragraph">Закажите карту Рокетбанка &mdash; это бесплатно и очень быстро</p>
 					</div>
-					<div class="screen__content-column">
+					<div class="screen__content-column screen__column-slide">
 						<h3 class="screen__title-text">Оплатите билеты</h3>
 						<p class="screen__paragraph">Оплатите картой 2 билета на любой фильм в кинотеатрах</p>
 					</div>
-					<div class="screen__content-column">
+					<div class="screen__content-column screen__column-slide">
 						<h3 class="screen__title-text">Получите деньги</h3>
 						<p class="screen__paragraph">В течение суток мы вернем вам деньги на карту</p>
 					</div>
@@ -32,13 +39,13 @@
 				<div class="screen__content-row">
 					<div class="screen__content-column"></div>
 					<div class="screen__content-column">
-						<button class="screen__button button__yellow button__order button">Заказать карту</button>
+						<button class="screen__button button__yellow button__order scale__button-two button">Заказать карту</button>
 						<div class="yellow__link-holder align-center">
-							<a class="yellow__link history" href="3.html">Подробнее о карте</a>
+							<a class="yellow__link fade__link history" href="3.html">Подробнее о карте</a>
 						</div>
 					</div>
 					<div class="screen__content-column flex__column flex__column-end flex__wrap">
-						<div class="film-sticker__svg-wrap">
+						<div class="film-sticker__svg-wrap screen__sticker">
 							<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="opacity: 1; box-shadow: none; border-radius: 0px;" viewBox="18.799999237060547 219.40003967285156 558.2999877929688 401.89990234375" y="0px" x="0px" id="Layer_1" width="" height="" preserveAspectRatio="xMidYMid meet" fill="#f24ebe" fill-opacity="1">
 <g>
 	<path d="M57.4,346c-1.3-1.8-2.2-5.1-2.1-7.3l0.8-15.6c0.1-2.2-1.6-3.8-3.8-3.5l-19,2.2c-2.2,0.3-3.8,2.2-3.5,4.4l3.4,27.7   c0.3,2.2,1.9,5,3.7,6.3l11.2,8c1.8,1.3,5,2.3,7.2,2.3h4.1c2.2,0,4-1.8,4-4v-8.1c0-2.2-1-5.5-2.3-7.3L57.4,346z"></path>
@@ -66,10 +73,11 @@
 </svg>
 						</div>
 						<div class="yellow__link-holder align-center">
-							<a class="history yellow__link" href="4.html">Выиграй билеты</a>
+							<a class="history yellow__link fade__link" href="4.html">Выиграй билеты</a>
 						</div>
 					</div>
 				</div>
+				<div class="screen__back-arrow history" href="index.html"></div>
 			</div>
 
 
@@ -111,9 +119,9 @@
 </g>
 </svg></div>
 			</a>
+
 			<div class="film-sticker__blot"></div>
 		</div>
-
 	</div>
 </div>
 
@@ -124,4 +132,7 @@
 		<a target="_blank" href="https://rocketbank.ru/pages/cinema-rules" class="conditions__link">Условия акции</a>
 	</div>
 </div>
-</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+	</html>

@@ -1,6 +1,6 @@
 .bg {
 
-  &__white-noize {
+  &__white-noize, &__violet-noize {
     background-image: url("../images/gif/noize.gif");
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,11 +15,15 @@
     }
   }
 
+  &__white-noize {
+    box-shadow: $shadow__glow-blue;
+  }
+
   &__violet-noize {
     box-shadow: $shadow__glow-violet;
 
     &-overlay {
-      background-color: $violet !important;
+      background-color: $violet;
     }
 
   }
