@@ -1,0 +1,93 @@
+.comments {
+
+  &__container {
+    display: none;
+    width: 100%;
+    max-width: 984px;
+    height: 80px;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+ &__item-left, &__item-right, &__item-left-left, &__item-right-right {
+   @include flex;
+   @include flex-_full-center;
+   position: absolute;
+   top: 0;
+   min-width: 100px;
+   height: 52px;
+   color: $black;
+   @extend %regular;
+   background-color: #d9e7ef;
+   border-radius: 90px;
+   font-size: 18px;
+   text-align: center;
+   padding: 0 25px;
+
+
+   &:after {
+     content: '';
+     position: absolute;
+     bottom: -19px;
+     width: 19px;
+     height: 19px;
+     background-color: transparent;
+     background-image: url('../images/png/tail.png');
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: top center;
+   }
+ }
+
+  &__item-left {
+    left: 130px;
+
+    &:after {
+      transform: scale(-1, 1);
+      right: 27px;
+    }
+  }
+
+  &__item-right {
+    right: 120px;
+
+    &:after {
+      transform: scale(-1, 1);
+      right: 27px;
+    }
+  }
+
+  &__item-left-left {
+    left: 180px;
+
+    &:after {
+      left: 27px;
+    }
+  }
+
+  &__item-right-right {
+    right: 180px;
+
+    &:after {
+      left: 27px;
+    }
+  }
+}
+
+.comment {
+
+  &__one {}
+  &__two {}
+  &__three {left: 180px;}
+  &__four {left: 330px;}
+  &__five {right: 180px;}
+  &__six {}
+  &__seven {right: -50px;}
+}
+
+.emoji {
+  margin-left: 5px;
+}

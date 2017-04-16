@@ -1,5 +1,8 @@
 /*History API goes here*/
 $(document).ready(function () {
+
+	$('.comments__container').delay(1000).fadeIn(400);
+
 	$(document).on('click', '.history', function (e) {
 		e.preventDefault();
 
@@ -50,6 +53,11 @@ function firstPageAnimation() {
 	TweenMax.to(".scale__button-one", .18, {scale: 1.1, delay: 7});
 	TweenMax.to(".scale__button-one", .18, {scale: 1, delay: 7.1});
 
+	TweenMax.from(".comment__one",.3, {opacity: 0, delay: 5});
+	TweenMax.to(".comment__one",.3, {opacity: 0, delay: 9});
+
+
+
 	/*Second page*/
 	TweenMax.staggerFrom(".screen__column-slide", .8, {y: 500, ease: Elastic.easeInOut.config(1, 1.2)}, 0.5);
 	TweenMax.from(".screen__sticker", .8, {scale: 0, delay: 1, ease: Elastic.easeInOut.config(1, 1.2)});
@@ -63,6 +71,8 @@ function firstPageAnimation() {
 
 	TweenMax.to(".screen__sticker", .18, {scale: 1.1, delay: 3.2});
 	TweenMax.to(".screen__sticker", .18, {scale: 1, delay: 3.3});
+	TweenMax.from(".comment__two",.3, {opacity: 0, delay: 5});
+	TweenMax.to(".comment__two",.3, {opacity: 0, delay: 9});
 	/*Second page*/
 
 	/*Third page*/
@@ -73,8 +83,23 @@ function firstPageAnimation() {
 		ease: Elastic.easeInOut.config(1, 1.2)
 	});
 	TweenMax.from(".bg__card-small", .8, {y: 300, delay: .2, ease: Elastic.easeInOut.config(1, 1.2)});
+	TweenMax.from(".comment__three",.3, {opacity: 0, delay: 5});
+	TweenMax.to(".comment__three",.3, {opacity: 0, delay: 9});
 	/*Third page*/
 
+	/*Fourth Page*/
+	TweenMax.from(".comment__four",.3, {opacity: 0, delay:.1});
+	TweenMax.to(".comment__four",.3, {opacity: 0, delay: 9});
+
+	TweenMax.from(".comment__five",.3, {opacity: 0, delay: 9.5});
+	TweenMax.to(".comment__five",.3, {opacity: 0, delay: 12.5});
+
+	TweenMax.from(".comment__six",.3, {opacity: 0, delay: 13});
+	TweenMax.to(".comment__six",.3, {opacity: 0, delay: 16});
+
+	TweenMax.from(".comment__seven",.3, {opacity: 0, delay: 16.5});
+	TweenMax.to(".comment__seven",.3, {opacity: 0, delay: 19.5});
+	/*Fourth Page*/
 	/*Arrow*/
 	TweenMax.from(".screen__back-arrow", .25, {opacity: 0, delay: 2});
 }
