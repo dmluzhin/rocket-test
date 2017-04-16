@@ -15,7 +15,7 @@
     @extend %regular;
     border: none;
     margin: 0 auto;
-
+    padding: 22px 5px;
 
     &:hover {
       background-color: $white;
@@ -60,6 +60,8 @@
     display: inline-block;
     cursor: pointer;
     margin-right: 16px;
+    padding: 17px 5px;
+    text-align: center;
   }
 
   &__fb {
