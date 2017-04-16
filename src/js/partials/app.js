@@ -87,7 +87,7 @@ function firstPageAnimation() {
 	/*Third page*/
 
 	/*Fourth Page*/
-	TweenMax.from(".comment__four",.3, {opacity: 0, delay:.1});
+	TweenMax.from(".comment__four",.3, {opacity: 0, delay:5});
 	TweenMax.to(".comment__four",.3, {opacity: 0, delay: 9});
 
 	TweenMax.from(".comment__five",.3, {opacity: 0, delay: 9.5});
