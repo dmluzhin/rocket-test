@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "3.*"
+    "jquery": "3.*",
+    "gsap": "^1.19.1"
   },
   "main": "y",
   "homepage": "y",
