@@ -32,6 +32,8 @@
     display: inline-block;
     width: 200px;
     height: 65px;
+    padding: 22px 5px;
+    text-align: center;
 
     &:hover {
       background-color: $white;
