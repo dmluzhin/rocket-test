@@ -5,7 +5,6 @@ $(document).ready(function () {
 
 	$(document).on('click', '.history', function (e) {
 		e.preventDefault();
-
 		var href = $(this).attr('href');
 		getContent(href, true);
 	});
