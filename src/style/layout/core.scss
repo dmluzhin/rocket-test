@@ -17,6 +17,17 @@ body {
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
 
+  &:after {
+    content: '';
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    background: url("../images/svg/margo__robbie.svg");
+
+    /*preload image CHTOB NE MIGALO*/
+  }
 }
 
 h1 {
